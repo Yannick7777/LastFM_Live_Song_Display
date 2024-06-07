@@ -1,0 +1,31 @@
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+  color-scheme: dark;
+}
+body {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  background: linear-gradient(-45deg, #8f0047, #006d8f);
+  background-size: 500% 500%;
+  animation: gradient 20s ease infinite;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 0.0rem;
+}
+a {
+  color: #98e2ff;
+}
+/* Extracted from skeleton-dark from little link -> https://github.com/sethcottle/littlelink and modified. */
