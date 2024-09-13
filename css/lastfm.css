@@ -1,12 +1,16 @@
+#lastfmthumbnail {
+    position: relative;
+    height: 50vh;
+}
+
 #lastfmthumbnailimg {
-    width: 20%;
+    position: absolute;
+    width: auto;
     height: auto;
-    margin-right: auto;
-    margin-left: auto;
-    min-width: 150px;
-    max-width: 1000px;
-    padding-top: 0.5em;
-    padding-bottom: 0em;
+    max-height: 50vh;
+    max-width: 80vw;
+    left: 50%;
+    transform: translateX(-50%);
   }
 .tiny {
     font-size: 50%;
@@ -16,4 +20,19 @@
 .small {
     font-size: 75%;
     margin-block: 0em;
+}
+html {
+    height: 100vh;
+}
+p {
+    font-size: 150%;
+}
+img {
+    opacity: 0;
+    transition: opacity 5s;
+}
+
+@keyframes fade {
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
 }
