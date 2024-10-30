@@ -1,5 +1,6 @@
 # Last FM Live Song display
-Easily integrate a live display of the song your currently playing with the help of the last.fm API.
+Full screen Song display of the currently playing song with the use of the last.fm API.
+Designed for use in Bars, Restaurants or similar.
 
 ### Demo
 [Demo here](https://eyer.life/music_demo)
@@ -21,8 +22,9 @@ Easily integrate a live display of the song your currently playing with the help
 - Click "View client secret" and copy it to a safe location as well.
 
 ### After you got your API keys
-- Navigate to your website root and into the chosen directory.
-- Clone this repo: `https://github.com/Yannick7777/lastfm_html_integration.git`
+- Navigate to your website root and into a directory inside the webroot of a PHP enabled webserver like Apache.
+- Install composer by following the [instructions on their official website.](https://getcomposer.org/download/)
+- Clone this repo: `git clone https://github.com/Yannick7777/lastfm_html_integration.git`
 - Rename the directory to the name you want: `mv lastfm_html_integration/ your_chosen_name/`
 - Change the directory to the root of the project: `cd your_chosen_name/`
 - Copy the .env_example and save it as .env: `cp .env_example .env`
@@ -30,16 +32,8 @@ Easily integrate a live display of the song your currently playing with the help
 - Paste all of your API Keys and secrets into the right spots and save.
 - Set `LAST_FM_USER_API_RESTRICTION` to true if... 
   - ...you're ok with your visitors being able to see your last.fm username.
-  - ...you're ok with your visitors being able to use your API for their own project.
+  - ...you're ok with your visitors being able to use your API with their own username for their own project.
   - ...you want to use your API with multiple different last.fm users. In this case set the username
-in the javascript of the individual site: `const (USERNAME_TO_OVERWRITE_API_WITH = "username")`
+in the javascript of the individual site: `const USERNAME_TO_OVERWRITE_API_WITH = "";`
 - Else it doesn't really matter what you set it to.
 - Navigate to your browser in the website; it should all work now!
-### Integrating into existing website 
-- Include the following code where you want to insert the display:
-```html
-        <div id="lastfmsong"></div> 
-        <div id="lastfmthumbnail"></div>
-        <p class="small">Current playing song data from last.fm API, Thumbnail from Spotify API.</p>
-```
-- Also, don't forget to include lastfm.js and lasfm.css in your document head.
