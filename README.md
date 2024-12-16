@@ -32,7 +32,7 @@ Designed for use in Bars, Restaurants or similar.
 - Paste all of your API Keys and secrets into the right spots and save.
 - Set `LAST_FM_USER_API_RESTRICTION` to true if... 
   - ...you're ok with your visitors being able to see your last.fm username.
-  - ...you're ok with your visitors being able to use your API with their own username for their own project.
+  - ...you're ok with your visitors being able to use your API with their own username for their own project. (Only if CORS isn't correctly set)
   - ...you want to use your API with multiple different last.fm users. In this case set the username
 in the javascript of the individual site: `const USERNAME_TO_OVERWRITE_API_WITH = "";`
 - Else it doesn't really matter what you set it to.
