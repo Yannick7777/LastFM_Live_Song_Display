@@ -1,9 +1,9 @@
 # Last FM Live Song display
 Full screen Song display of the currently playing song with the use of the last.fm API.
-Designed for use in Bars, Restaurants or similar.
+Designed for use in bars, restaurants or similar.
 
 ### Demo
-[Demo here](https://eyer.life/music_demo)
+[Demo here](https://eyer.life/music_demo) - Works best for screens with a 16:9 ratio in fullscreen.
 
 ## Features
 - Live display of currently playing song
@@ -12,7 +12,7 @@ Designed for use in Bars, Restaurants or similar.
 
 ## Installation
 ### Preparation
-- Fill out the [last.fm API Account creation form](https://www.last.fm/api/account/create).
+- Fill out the [last.fm API account creation form](https://www.last.fm/api/account/create).
 - After filling the form out, it'll display an API key and a shared secret.
 - In this case, you only need the API key. Copy it to a safe location for later usage.
 - Fill out the [Spotify app creation form](https://developer.spotify.com/dashboard/create).
