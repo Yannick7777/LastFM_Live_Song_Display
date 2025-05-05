@@ -30,7 +30,7 @@ Designed for use in bars, restaurants or similar.
 - Copy the .env_example and save it as .env: `cp .env_example .env`
 - Edit the .env file with your favourite text editor, for example nano: `nano .env`
 - Paste all of your API Keys and secrets into the right spots and save.
-- Set `LAST_FM_USER_API_RESTRICTION` to true if... 
+- Set `LAST_FM_USER_API_RESTRICTION` to false if... 
   - ...you're ok with your visitors being able to see your last.fm username.
   - ...you're ok with your visitors being able to use your API with their own username for their own project. (Only if CORS isn't correctly set)
   - ...you want to use your API with multiple different last.fm users. In this case set the username
